@@ -1,0 +1,26 @@
+# Algorithm Selection:
+method: syn_set    # normal | syn_set | pre_opt_syn_set
+method_DC: DSA      # dataset condensation strategy (will be ignored if method == nomral): default DSA
+# differentiable Siamese augmentation strategy
+dsa_strategy: color_crop_cutout_flip_scale_rotate  #   None | color_crop_cutout_flip_scale_rotate
+
+# Dataset Selection
+dataset: CIFAR100       # CIFAR10 CIFAR100 FashionMNIST MNIST
+
+# Model Selection
+model: ConvNet          # network    default ConvNet and the only implementated network
+
+ipc: 100                # images per class: 1 | 10 | 50   default 10
+
+epochs_server: 100      # communicational rounds    default 100
+epochs_client: 10       # loacal epochs             default 10
+
+batch_size: 256         # batch size      default: 256
+lr: 0.01                # learning rate   default: 0.01
+
+
+data_path: data           # dataset path
+save_path: result         # path to save results
+datasets_path: datasets   # pre optimized dataset condensation datasets
+
+ip_address: 192.168.0.1:8080    # Server IP-Address
