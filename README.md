@@ -29,4 +29,4 @@ The client part is split into multiple files. The neural network is defined in
 The training and testing process itself is implemented in the *dc_net.py* file
 and the *utils.py* file keeps many utility functions.
 To configure the clients you have to use the given *config.yml*.
-Further information is given in my [Thesis](documentation/Thesis.pdf)
+Further information is given in my [Thesis](documentation/Thesis.pdf).
