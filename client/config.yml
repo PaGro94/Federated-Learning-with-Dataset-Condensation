@@ -1,5 +1,5 @@
 # Algorithm Selection:
-method: syn_set    # normal | syn_set | pre_opt_syn_set
+method: syn_set    # normal | syn_set | pre_opt_syn_set (normal is a training with the full dataset without any dataset manipulation. syn_set is with a smaller dataset. pre_opt_syn_set loads a pre_optimized synthetic set from "https://drive.google.com/drive/folders/1Dp6V6RvhJQPsB-2uZCwdlHXf1iJ9Wb_g" based on the following project "https://github.com/VICO-UoE/DatasetCondensation")
 method_DC: DSA      # dataset condensation strategy (will be ignored if method == nomral): default DSA
 # differentiable Siamese augmentation strategy
 dsa_strategy: color_crop_cutout_flip_scale_rotate  #   None | color_crop_cutout_flip_scale_rotate

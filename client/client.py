@@ -18,8 +18,7 @@ DEVICE: str = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 class DCClient(fl.client.NumPyClient):
-    """Flower client implementing CIFAR-10 image classification using
-    PyTorch."""
+    """Flower client implemention"""
 
     def __init__(
         self,
@@ -160,7 +159,7 @@ class DCClient(fl.client.NumPyClient):
 
 
 def main() -> None:
-    """Load data, start CifarClient."""
+    """Load data, start DCClient."""
 
     with open('config.yml', 'r') as file:
         settings = yaml.safe_load(file)
